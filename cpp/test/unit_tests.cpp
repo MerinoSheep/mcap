@@ -1575,7 +1575,7 @@ TEST_CASE("LZ4 compression", "[reader][writer]") {
 }
 #endif
 
-#ifndef MCAP_COMPRESSION_NO_LZ4
+#ifndef MCAP_COMPRESSION_NO_ZSTD
 TEST_CASE("zstd compression", "[reader][writer]") {
   SECTION("Roundtrip") {
     Buffer buffer;
